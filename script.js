@@ -69,3 +69,20 @@ var cor = "Amarelo";
 
 //let agora = new Date()
 //console.log(agora.toLocaleDateString("pt-BR"))
+
+
+//---ESTRUTURA DE FUNÇÕES e OBJETOS EM JS
+let celular = function() {
+
+    this.cor = "prata";
+
+    this.ligar = function() {
+      console.log("ligação")
+      return "Ligando";
+    } 
+
+}
+
+let objeto = new celular();
+
+console.log(objeto.ligar())
